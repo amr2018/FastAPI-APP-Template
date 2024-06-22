@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS file -->
+    <link href = "{{ url_for('static', path='/css/style.css') }}" rel="stylesheet">
+    
+
+    <!-- Font -->
+
+
+    <!-- Icons -->
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+     <!-- Main Javascript File -->
+    <script src="{{ url_for('static', path = 'js/main.js' ) }}"></script>
+    {% block content %}{% endblock %}
+    {% block js %}{% endblock %}
+</body>
+</html>
